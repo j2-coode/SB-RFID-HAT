@@ -266,13 +266,5 @@ class SSD1306(i2c_interface):
         self.Draw.ellipse(cords)
 
     def DrawArc(self, cords=(10, 10, 120, 10), start=0, end=90):
-        """
-        Draws an arc (a portion of a circle outline) between the start and
-        end angles, inside the given bounding box
-        :param end: Starting angle, in degrees. Angles are measured from 3
-        o’clock, increasing clockwise.
-        :param start: Ending angle, in degrees.
-        :param cords: Four points to define the bounding box
-        :return: None
-        """
+
         self.Draw.arc(cords, start=start, end=end)
