@@ -35,7 +35,7 @@ def info_print():
     display.DrawRect()
     display.ShowImage()
     sleep(1)
-    display.PrintText("Place your TAG", FontSize=14)
+    display.PrintText("Waiting For Cat", FontSize=14)
     display.ShowImage()
     
 
