@@ -51,11 +51,11 @@ if __name__ == "__main__":
         print (id)
         #CPU = info.CPU_Info()
         # display.DirImage("Images/CPU.png", size=(24, 24), cords=(0, 0))
-        display.PrintText("ID : " +(id), cords=(4, 8), FontSize=11)
+        display.PrintText("Cat : " +(id), cords=(4, 8), FontSize=10)
         display.DrawRect()
         display.ShowImage()
         sleep(2)
-        display.PrintText("Place your TAG", FontSize=14)
+        display.PrintText("Waiting For Cat", FontSize=14)
         display.ShowImage()
         
         
