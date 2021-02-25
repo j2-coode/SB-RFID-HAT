@@ -52,12 +52,12 @@ if __name__ == "__main__":
         id = SB.read_rfid()
         if id == '800093F509EF':
           print("Molly has passed through the cat flap")
-         display.PrintText("Cat : " +(id), cords=(4, 8), FontSize=10)
-         display.DrawRect()
-         display.ShowImage()
-         sleep(2)
-        display.PrintText("Waiting For Cat", FontSize=14)
-        display.ShowImage()
+          display.PrintText("Cat : " +(id), cords=(4, 8), FontSize=10)
+            display.DrawRect()
+            display.ShowImage()
+            sleep(2)
+            display.PrintText("Waiting For Cat", FontSize=14)
+            display.ShowImage()
         
    # while True:
     #    id=SB.read_rfid()
