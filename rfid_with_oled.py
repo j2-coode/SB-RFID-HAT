@@ -48,14 +48,14 @@ SB = read_rfid()
 if __name__ == "__main__":
     info_print()
     
-while true:
-    id = SB.read_rfid()
-    if id == '800093F509EF':
-        print("Molly has passed through the cat flap")
-        display.PrintText("Cat : " +(id), cords=(4, 8), FontSize=10)
-        display.DrawRect()
-        display.ShowImage()
-        sleep(2)
+    while true:
+        id = SB.read_rfid()
+        if id == '800093F509EF':
+          print("Molly has passed through the cat flap")
+         display.PrintText("Cat : " +(id), cords=(4, 8), FontSize=10)
+         display.DrawRect()
+         display.ShowImage()
+         sleep(2)
         
    # while True:
     #    id=SB.read_rfid()
