@@ -48,7 +48,7 @@ SB = read_rfid()
 if __name__ == "__main__":
     info_print()
     
-    a = 800093F509EF
+    a = '800093F509EF'
     while True:
         id=SB.read_rfid()
         if a == id:
