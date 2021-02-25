@@ -44,17 +44,16 @@ display = SSD1306()
 SB = read_rfid()
 
 
-
 if __name__ == "__main__":
-
     info_print()
     while True:
         id=SB.read_rfid()
-        print (id" Has Passed Through The Cat Flap")
-        print ("Cat ", id, " Has Passed Through The Cat Flap")
+        print (id," Has Passed Through The Cat Flap")
         #CPU = info.CPU_Info()
         # display.DirImage("Images/CPU.png", size=(24, 24), cords=(0, 0))
         display.PrintText("Cat : " +(id), cords=(4, 8), FontSize=10)
-
-
-        
+        display.DrawRect()
+        display.ShowImage()
+        sleep(2)
+        display.PrintText("Waiting For Cat", FontSize=14)
+        display.ShowImage()
