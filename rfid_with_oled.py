@@ -14,7 +14,6 @@ DIR_PATH = path.abspath(path.dirname(__file__))
 DefaultFont = path.join(DIR_PATH, "Fonts/GothamLight.ttf")
 
 
-if id == 
 
 class read_rfid:
     def read_rfid (self):
