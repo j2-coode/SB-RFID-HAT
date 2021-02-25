@@ -14,6 +14,8 @@ DIR_PATH = path.abspath(path.dirname(__file__))
 DefaultFont = path.join(DIR_PATH, "Fonts/GothamLight.ttf")
 
 
+if id == 
+
 class read_rfid:
     def read_rfid (self):
         ser = serial.Serial ("/dev/ttyS0")                           #Open named port 
@@ -46,9 +48,12 @@ SB = read_rfid()
 
 if __name__ == "__main__":
     info_print()
+    
+    a = 800093F509EF
     while True:
         id=SB.read_rfid()
-        print ("Cat", id, " Has Passed Through The Cat Flap" )
+        if a == id:
+        print ("Molly Has Passed Through The Cat Flap" )
         #CPU = info.CPU_Info()
         # display.DirImage("Images/CPU.png", size=(24, 24), cords=(0, 0))
         display.PrintText("Cat : " +(id), cords=(4, 8), FontSize=10)
