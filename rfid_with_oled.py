@@ -56,6 +56,8 @@ if __name__ == "__main__":
          display.DrawRect()
          display.ShowImage()
          sleep(2)
+        display.PrintText("Waiting For Cat", FontSize=14)
+        display.ShowImage()
         
    # while True:
     #    id=SB.read_rfid()
